@@ -1,0 +1,29 @@
+# Variables de entorno sensibles
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Backups de base de datos
+*.sql
+*.dump
+
+# Node modules si usas scripts
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Datos temporales
+temp/
+tmp/

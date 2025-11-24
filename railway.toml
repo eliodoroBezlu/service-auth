@@ -1,0 +1,13 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "/opt/keycloak/bin/kc.sh start --optimized"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+healthcheckPath = "/health/ready"
+healthcheckTimeout = 300
+
+[service]
+name = "keycloak"
